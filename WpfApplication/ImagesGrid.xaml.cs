@@ -24,7 +24,6 @@ namespace WpfApplication
             InitializeComponent();
             BindImages();
         }
-
         private void BindImages()
         {
             List<Image> imgList = new List<Image>();
