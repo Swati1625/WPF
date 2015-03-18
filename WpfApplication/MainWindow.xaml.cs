@@ -27,6 +27,7 @@ namespace WpfApplication
             InitializeComponent();
             GetUsers();
         }
+
         private void CreateDB()
         {
             SQLiteConnection.CreateFile("Users.sqlite");
