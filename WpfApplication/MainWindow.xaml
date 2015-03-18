@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="0,27,0,0">
+        <TextBox HorizontalAlignment="Left" Name="firstName" Height="23" Margin="233,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Name="lastName" Height="23" Margin="233,61,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button Content="Save" Name="btnSave" HorizontalAlignment="Left" Margin="233,116,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <Label Content="FirstName" HorizontalAlignment="Left" Margin="156,14,0,0" VerticalAlignment="Top"/>
+        <Label Content="LastName" HorizontalAlignment="Left" Margin="156,58,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.013,0.134"/>
+        <DataGrid Name="UsersGrid" Margin="85,155,75,43"  AutoGenerateColumns="False"   >
+
+            <DataGrid.Columns>
+                 <DataGridTextColumn Header="FirstName" Binding="{Binding FirstName}"/>
+                <DataGridTextColumn Header="LastName" Binding="{Binding LastName}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+        
+        
+    </Grid>
+</Window>
